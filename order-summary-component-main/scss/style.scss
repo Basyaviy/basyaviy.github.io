@@ -9,14 +9,14 @@
     height: 1000px;
     margin: 0px auto;
     padding: 25px;
-    background: $paleBlue url('/images/pattern-background-desktop.svg') 0 0 no-repeat;
+    background: $paleBlue url('../images/pattern-background-desktop.svg') 0 0 no-repeat;
     background-size: contain;
     background-position: 0 0;
     display: flex;
     align-items: center;
     @media (max-width: 520px) {
         max-width: 375px;
-        background: $paleBlue url('/images/pattern-background-mobile.svg') 0 0 no-repeat;
+        background: $paleBlue url('../images/pattern-background-mobile.svg') 0 0 no-repeat;
         background-size: contain;
     }
 }
