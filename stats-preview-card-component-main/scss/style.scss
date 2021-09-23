@@ -1,0 +1,122 @@
+@import "globals";
+* {
+    box-sizing: border-box;
+}
+
+.wrapper {
+    max-width: 1440px;
+    min-width: 375px;
+    margin: 0 auto;
+    background-color: $veryDarkBlue;
+    padding-top: 180px;
+    padding-bottom: 180px;
+    @media(max-width: 1175px) {
+        padding: 86px 25px;
+    }
+}
+
+.intro {
+    max-width: 1110px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    border-radius: 8px;
+    overflow: hidden;
+    &__content {
+        background-color: $darkDesaturatedBlue;
+        width: 51%;
+        color: $white;
+        padding: 64px 114px 64px 70px;
+        @media(max-width: 1175px) {
+            order: 2;
+            width: 100%;
+            padding: 35px 30px;
+            overflow: hidden;
+        }
+    }
+    &__img {
+        width: 49%;
+        background-color: $softViolet;
+        & img {
+            opacity: 0.4;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+            @media(max-width: 1175px) {
+                margin: 0px 0px -35px 0;
+            }
+        }
+        @media(max-width:1175px) {
+            order: 1;
+            width: 100%;
+            // height: 240px;
+        }
+    }
+    &__title {
+        color: $slightlyTransparentWhite;
+        font-size: 35px;
+        line-height: 1.3;
+        font-weight: 700;
+        & span {
+            color: $softViolet;
+        }
+        @media(max-width: 1175px) {
+            font-size: 28px;
+            text-align: center;
+        }
+    }
+    &__text {
+        margin-top: 30px;
+        margin-right: 40px;
+        &>p {
+            font-size: 15px;
+            line-height: 2;
+            @media(max-width: 1175px) {
+                text-align: center;
+                margin-top: 5px;
+                line-height: 1.8;
+            }
+        }
+        @media(max-width:1175px) {
+            margin-top: 0px;
+            margin-right: 0px;
+        }
+    }
+    &__statistics {
+        margin-top: 54px;
+        display: flex;
+        justify-content: space-between;
+        @media(max-width: 1175px) {
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            margin-top: 30px;
+        }
+    }
+    &__statistics-column {
+        color: $slightlyTransparentWhite;
+        font-size: 13px;
+        font-family: 'Lexend Deca', sans-serif;
+        text-transform: uppercase;
+        font-weight: 400;
+        & strong {
+            color: $white;
+            font-size: 22px;
+        }
+        @media(max-width: 1175px) {
+            margin-top: 10px;
+        }
+    }
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: right;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+.attribution {}
