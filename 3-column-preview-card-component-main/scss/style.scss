@@ -1,0 +1,101 @@
+@import "normalize";
+@import "globals";
+body {
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+main {
+    max-width: 1440px;
+    background-color: $veryLightGray;
+    padding: 168px 25px 125px 25px;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 920px;
+    margin: 0 auto;
+    border-radius: 10px;
+    overflow: hidden;
+    &__item {
+        box-sizing: border-box;
+        width: 33.333%;
+        padding: 47px 43px;
+        color: $veryLightGray;
+        @media(max-width: 900px) {
+            width: 100%;
+        }
+    }
+    &__icon {}
+    &__title {
+        padding-top: 40px;
+        font-size: 35px;
+        font-weight: 700;
+        font-family: 'Big Shoulders Display', cursive;
+    }
+    &__text {
+        padding-top: 40px;
+        font-size: 12px;
+        line-height: 2;
+        color: $transparentWhite;
+    }
+    &__button {
+        margin-top: 86px;
+        @media(max-width: 900px) {
+            margin-top: 26px;
+        }
+        & button {
+            padding: 18px 32px;
+            border-radius: 50px;
+            &:hover {
+                border: 2px solid $veryLightGray;
+                color: $veryLightGray;
+            }
+        }
+    }
+}
+
+.item-col1 {
+    background-color: $brightOrange;
+}
+
+.item-col2 {
+    background-color: $darkCyan;
+}
+
+.item-col3 {
+    background-color: $veryDarkCyan;
+}
+
+.btn-col1 {
+    color: $brightOrange;
+    border: 2px solid $brightOrange;
+    &:hover {
+        background-color: $brightOrange;
+    }
+}
+
+.btn-col2 {
+    color: $darkCyan;
+    border: 2px solid $darkCyan;
+    &:hover {
+        background-color: $darkCyan;
+    }
+}
+
+.btn-col3 {
+    color: $veryDarkCyan;
+    border: 2px solid $veryDarkCyan;
+    &:hover {
+        background-color: $veryDarkCyan;
+    }
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}

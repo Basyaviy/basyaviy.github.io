@@ -1,0 +1,17 @@
+body {
+  background-color: lightgray;
+}
+
+a {
+  display: inline-block;
+  font-size: 30px;
+  text-decoration: none;
+  padding: 20px;
+  margin: 2px;
+  border-radius: 20px;
+  background-color: cyan;
+}
+
+ahover {
+  text-decoration: underline;
+}
