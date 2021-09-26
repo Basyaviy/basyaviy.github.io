@@ -367,6 +367,7 @@ main {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   max-width: 920px;
+  min-width: 300px;
   margin: 0 auto;
   border-radius: 10px;
   overflow: hidden;
