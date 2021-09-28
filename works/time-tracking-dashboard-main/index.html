@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <title>Frontend Mentor | Time tracking dashboard</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <main class="main">
+        <div class="grid">
+            <div class="grid__item grid-big  item-1">
+                <div class="blue-container padding-lr">
+                    <div class="grid__photo">
+                        <img src="images/image-jeremy.png" alt="">
+                    </div>
+                    <div class="grid__text">
+                        <p class="grid__report">Report for</p>
+                        <p class="grid__name">Jeremy Robson</p>
+                    </div>
+                </div>
+                <div class="grid__time-scale padding-lr">
+                    <label>
+									<input class="grid__input" type="radio" name="group" value="daily"  onclick="doMagic('daily')" checked>
+								<span>Daily</span>
+							</label>
+                    <label>
+								<input class="grid__input" type="radio" name="group" value="weekly" onclick="doMagic('weekly')">
+							<span>Weekly</span>
+						</label>
+
+                    <label>
+							<input class="grid__input" type="radio" name="group" value="monthly"  onclick="doMagic('monthly')">
+						<span>Monthly</span>
+					</label>
+                </div>
+            </div>
+
+            <div class="grid__item item-2">
+                <div class="grid__content padding-lr">
+                    <div class="grid__title">
+                        <div class="grid__title-type" id="item2-title">data</div>
+                        <div class="grid__title-icon">
+                            <a href="#"><img src="images/icon-ellipsis.svg" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="grid__data-flex">
+                        <div class="grid__data"><span id="item2-current">00</span>hrs</div>
+                        <div class="grid__data-week">Last week - <span><span id="item2-previous">00</span>hrs</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid__item item-3">
+                <div class="grid__content padding-lr">
+                    <div class="grid__title">
+                        <div class="grid__title-type" id="item3-title">data</div>
+                        <div class="grid__title-icon">
+                            <a href="#"><img src="images/icon-ellipsis.svg" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="grid__data-flex">
+                        <div class="grid__data"><span id="item3-current">00</span>hrs</div>
+                        <div class="grid__data-week">Last week - <span><span id="item3-previous">00</span>hrs</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid__item item-4">
+                <div class="grid__content padding-lr">
+                    <div class="grid__title">
+                        <div class="grid__title-type" id="item4-title">data</div>
+                        <div class="grid__title-icon">
+                            <a href="#"><img src="images/icon-ellipsis.svg" alt=""></a>
+                        </div>
+                    </div>
+
+                    <div class="grid__data-flex">
+                        <div class="grid__data"><span id="item4-current">00</span>hrs</div>
+                        <div class="grid__data-week">Last week - <span><span id="item4-previous">00</span>hrs</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid__item item-5">
+                <div class="grid__content padding-lr">
+                    <div class="grid__title">
+                        <div class="grid__title-type" id="item5-title">data</div>
+                        <div class="grid__title-icon">
+                            <a href="#"><img src="images/icon-ellipsis.svg" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="grid__data-flex">
+                        <div class="grid__data"><span id="item5-current">00</span>hrs</div>
+                        <div class="grid__data-week">Last week - <span><span id="item5-previous">00</span>hrs</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="grid__item item-6">
+                <div class="grid__content padding-lr">
+                    <div class="grid__title">
+                        <div class="grid__title-type" id="item6-title">data</div>
+                        <div class="grid__title-icon">
+                            <a href="#"><img src="images/icon-ellipsis.svg" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="grid__data-flex">
+                        <div class="grid__data"><span id="item6-current">00</span>hrs</div>
+                        <div class="grid__data-week">Last week - <span><span id="item6-previous">00</span>hrs</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="grid__item item-7">
+                <div class="grid__content padding-lr">
+                    <div class="grid__title">
+                        <div class="grid__title-type" id="item7-title">data</div>
+                        <div class="grid__title-icon">
+                            <a href="#"><img src="images/icon-ellipsis.svg" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="grid__data-flex">
+                        <div class="grid__data"><span id="item7-current">00</span>hrs</div>
+                        <div class="grid__data-week">Last week - <span><span id="item7-previous">00</span>hrs</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="https://basyaviy.github.io/">Basyaviy</a>.
+    </div>
+
+    <script src="js/data.json"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

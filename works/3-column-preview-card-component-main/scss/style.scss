@@ -8,49 +8,55 @@ main {
     max-width: 1440px;
     background-color: $veryLightGray;
     padding: 168px 25px 125px 25px;
+    margin: 0 auto;
+    @media(max-width: 900px) {
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
 }
 
 .flex {
     display: flex;
     flex-wrap: wrap;
     max-width: 920px;
-    min-width: 300px;
+    min-width: 325px;
     margin: 0 auto;
     border-radius: 10px;
     overflow: hidden;
     &__item {
         box-sizing: border-box;
         width: 33.333%;
-        padding: 47px 43px;
+        padding: 50px 49px;
         color: $veryLightGray;
-        position: relative;
         height: 500px;
+        position: relative;
         @media(max-width: 900px) {
             width: 100%;
+            height: 443px;
         }
     }
     &__title {
-        padding-top: 40px;
-        font-size: 39px;
+        padding-top: 32px;
+        font-size: 40px;
         font-weight: 700;
         font-family: 'Big Shoulders Display', cursive;
         text-transform: uppercase;
     }
     &__text {
         padding-top: 27px;
-        font-size: 16px;
-        line-height: 1.6;
+        font-size: 15px;
+        line-height: 1.7;
         color: $transparentWhite;
     }
     &__button {
-        //   margin-top: 86px;
         position: absolute;
-        bottom: 45px;
+        bottom: 46px;
         @media(max-width: 900px) {
-            margin-top: 26px;
+            // margin-top: 26px;
+            // bottom: 20px;
         }
         & button {
-            padding: 17px 32px;
+            padding: 16px 30px;
             border-radius: 50px;
             &:hover {
                 border: 2px solid $veryLightGray;

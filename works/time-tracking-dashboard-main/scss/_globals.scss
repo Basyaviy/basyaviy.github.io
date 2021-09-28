@@ -1,0 +1,39 @@
+// ### Primary
+$blue: hsl(246, 80%, 60%);
+// (work)
+$lightOrange: hsl(15, 100%, 70%);
+// (play)
+$softBlue: hsl(195, 74%, 62%);
+// (study)
+$lightRed: hsl(348, 100%, 68%);
+// (exercise)
+$limeGreen: hsl(145, 58%, 55%);
+// (social)
+$violet: hsl(264, 64%, 52%);
+// (self care)
+$softOrange: hsl(43, 84%, 65%);
+// ### Neutral
+$veryDarkBlue: hsl(226, 43%, 10%);
+$darkBlue: hsl(235, 46%, 20%);
+$desaturatedBlue: hsl(235, 45%, 61%);
+$paleBlue: hsl(236, 100%, 87%);
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    // Font size: 18px (card titles e.g. Work, Play)
+    font-size: 18px;
+    font-family: 'Rubik', sans-serif;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}

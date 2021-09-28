@@ -23,6 +23,7 @@ body {
 
 .wrapper {
   width: 100%;
+  min-width: 375px;
   margin: 0 auto;
 }
 
@@ -30,7 +31,6 @@ body {
   max-width: 1440px;
   height: 1000px;
   margin: 0px auto;
-  padding: 25px;
   background: #e0e8ff url("../images/pattern-background-desktop.svg") 0 0 no-repeat;
   background-size: contain;
   background-position: 0 0;
@@ -45,6 +45,8 @@ body {
 @media (max-width: 520px) {
   .intro {
     max-width: 375px;
+    padding: 25px;
+    height: auto;
     background: #e0e8ff url("../images/pattern-background-mobile.svg") 0 0 no-repeat;
     background-size: contain;
   }

@@ -1,0 +1,195 @@
+@import "normalize";
+@import "globals";
+.main {
+    max-width: 1440px;
+    min-width: 320px;
+    padding: 250px 165px;
+    background-color: $veryDarkBlue;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin: 0 auto;
+    @media (max-width: 579px) {
+        padding: 80px 25px;
+    }
+}
+
+.grid {
+    max-width: 1110px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 33px;
+    margin: 0 auto;
+    @media(max-width: 579px) {
+        grid-gap: 30px;
+    }
+    &__item {
+        background-color: $darkBlue;
+        border-radius: 10px;
+        position: relative;
+        background-repeat: no-repeat;
+        background-position: 90% -5%;
+        height: 238px;
+        @media(max-width: 579px) {
+            height: 154px;
+        }
+    }
+    &__content {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 193px;
+        border-radius: 10px;
+        background-color: $darkBlue;
+        color: #fff;
+        padding-top: 27px;
+        @media(max-width: 579px) {
+            height: 120px;
+        }
+    }
+    &__photo img {
+        margin-top: 30px;
+        width: 85px;
+        border: 3px solid #fff;
+        border-radius: 50%;
+        @media(max-width: 579px) {
+            width: 70px;
+        }
+    }
+    &__report {
+        margin-top: 40px;
+        color: $paleBlue;
+        font-size: 11px;
+        @media(max-width: 579px) {
+            font-size: 15px;
+        }
+    }
+    &__name {
+        margin-top: 10px;
+        font-size: 40px;
+        color: #fff;
+        font-weight: 300;
+        padding-bottom: 90px;
+        @media(max-width: 579px) {
+            margin-top: 7px;
+            font-size: 24px;
+        }
+    }
+    &__time-scale {
+        margin-top: 30px;
+        & label {
+            margin-top: 20px;
+            display: block;
+            text-decoration: none;
+            color: $desaturatedBlue;
+            @media (max-width: 579px) {
+                margin-top: 0;
+            }
+        }
+        & input {
+            display: none;
+        }
+        & input:checked+span {
+            color: #fff;
+        }
+        & label:hover {
+            color: #fff;
+        }
+        @media (max-width: 889px) {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 25px;
+            margin-bottom: 22px;
+        }
+    }
+    &__text {
+        @media (max-width: 579px) {
+            margin-left: 15px;
+        }
+    }
+    &__title {
+        font-size: 20px;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__data-flex {
+        @media(max-width: 579px) {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+    &__data {
+        margin-top: 27px;
+        font-size: 55px;
+        font-weight: 300;
+        @media(max-width: 579px) {
+            margin-top: 6px;
+            font-size: 32px;
+        }
+    }
+    &__data-week {
+        font-size: 14px;
+        color: $paleBlue;
+        margin-top: 10px;
+        @media(max-width: 579px) {
+            font-size: 15px;
+        }
+    }
+}
+
+.item-2 {
+    background: $lightOrange url('../images/icon-work.svg') 90% -5% no-repeat;
+}
+
+.item-3 {
+    background: $softBlue url('../images/icon-play.svg') 90% -5% no-repeat;
+}
+
+.item-4 {
+    background: $lightRed url('../images/icon-study.svg') 90% -5% no-repeat;
+}
+
+.item-5 {
+    background: $limeGreen url('../images/icon-exercise.svg') 90% -5% no-repeat;
+}
+
+.item-6 {
+    background: $violet url('../images/icon-social.svg') 90% -5% no-repeat;
+}
+
+.item-7 {
+    background: $softOrange url('../images/icon-self-care.svg') 90% -5% no-repeat;
+}
+
+.padding {
+    padding: 30px;
+}
+
+.padding-lr {
+    padding-left: 30px;
+    padding-right: 30px;
+    @media(max-width: 579px) {
+        padding-left: 23px;
+        padding-right: 23px;
+    }
+}
+
+.blue-container {
+    background-color: $blue;
+    border-radius: 10px;
+    height: 350px;
+    @media (max-width: 579px) {
+        display: flex;
+        height: 130px;
+    }
+}
+
+.grid-big {
+    grid-row: 1/3;
+    height: 100%;
+}
+
+.item-color-1 {
+    background-color: $darkBlue;
+}
