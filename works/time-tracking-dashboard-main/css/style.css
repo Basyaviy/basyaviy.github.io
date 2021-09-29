@@ -549,14 +549,14 @@ body {
   }
 }
 
-.grid__data-week {
+.grid__data-previous {
   font-size: 14px;
   color: #bdc1ff;
   margin-top: 10px;
 }
 
 @media (max-width: 579px) {
-  .grid__data-week {
+  .grid__data-previous {
     font-size: 15px;
   }
 }

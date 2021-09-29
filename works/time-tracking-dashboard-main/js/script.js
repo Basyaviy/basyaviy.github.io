@@ -14,6 +14,10 @@ var title = document.getElementById('item2-title');
 var current = document.getElementById('item2-current');
 var previous = document.getElementById('item2-previous');
 
+var yesterday = "Yesterday";
+var lastWeek = "Last Week";
+var lastMonth = "Last Month";
+
 doMagic("daily");
 
 function doMagic(timeframe) {
@@ -24,9 +28,23 @@ function doMagic(timeframe) {
             title = document.getElementById('item' + (i + 2) + '-title');
             current = document.getElementById('item' + (i + 2) + '-current');
             previous = document.getElementById('item' + (i + 2) + '-previous');
+            console.log("test before:" + previous.innerText);
+            var period;
+            switch (timeframe) {
+                case 'daily':
+                    period = yesterday;
+                    break;
+                case 'weekly':
+                    period = lastWeek;
+                    break;
+                case 'monthly':
+                    period = lastMonth;
+                    break;
+            }
+
             title.innerText = data[i].title;
             current.innerText = data[i].timeframes[timeframe].current;
-            previous.innerText = data[i].timeframes[timeframe].previous;
+            previous.innerText = period + " - " + data[i].timeframes[timeframe].previous + "hrs";
         }
     });
 }
