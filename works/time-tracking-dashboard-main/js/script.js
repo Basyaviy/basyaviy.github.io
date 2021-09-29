@@ -28,7 +28,6 @@ function doMagic(timeframe) {
             title = document.getElementById('item' + (i + 2) + '-title');
             current = document.getElementById('item' + (i + 2) + '-current');
             previous = document.getElementById('item' + (i + 2) + '-previous');
-            console.log("test before:" + previous.innerText);
             var period;
             switch (timeframe) {
                 case 'daily':
