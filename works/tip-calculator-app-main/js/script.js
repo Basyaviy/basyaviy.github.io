@@ -10,17 +10,14 @@ document.addEventListener('input', e => {
 
     switch (val_name) {
         case 'percent':
+            //clear Custom field
+            document.getElementById('custom').value = '';
             percent = val_value;
             break;
 
         case 'percent-custom':
             percent = val_value;
-            // uncheck all radio-buttons percents
-            var arr = document.getElementsByClassName('calc__grid-item-input');
-            for (var i = 0; i < arr.length; i++) {
-                if (arr[i].checked)
-                    arr[i].checked = false;
-            }
+            uncheckPercents();
             break;
         case 'bill':
             bill = val_value;
@@ -41,3 +38,22 @@ document.addEventListener('input', e => {
         }
     }
 });
+
+// uncheck all radio-buttons percents
+function uncheckPercents() {
+    var arr = document.getElementsByClassName('calc__grid-item-input');
+    for (var i = 0; i < arr.length; i++) {
+        if (arr[i].checked)
+            arr[i].checked = false;
+    }
+}
+
+
+function my_reset() {
+    document.getElementById('bill').value = '';
+    document.getElementById('custom').value = '';
+    document.getElementById('person').value = '';
+    total.innerText = 0;
+    amount.innerText = 0;
+    uncheckPercents();
+}

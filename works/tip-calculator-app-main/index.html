@@ -22,7 +22,7 @@
                 <div class="calc__buttons">
                     <p class="calc__buttons-bill">Bill</p>
                     <div class="calc__buttons-input-bill field">
-                        <input type="number" name="bill" id="">
+                        <input type="number" name="bill" id="bill">
                         <img src="images/icon-dollar.svg" alt="dollar">
                     </div>
                     <p class="calc__buttons-select">Select Tip %</p>
@@ -33,13 +33,13 @@
                         <label class="calc__grid-item"><input class="calc__grid-item-input" type="radio" name="percent" value="25"><p>25%</p></label>
                         <label class="calc__grid-item"><input class="calc__grid-item-input" type="radio" name="percent" value="50"><p>50%</p></label>
                         <div class="field">
-                            <input placeholder="Custom" type="number" name="percent-custom">
+                            <input placeholder="Custom" type="number" name="percent-custom" id="custom">
                         </div>
                     </div>
 
                     <p class="calc__buttons-num-of-people">Number of People</p>
                     <div class="calc__buttons-input-person field">
-                        <input type="number" name="person" id="">
+                        <input type="number" name="person" id="person">
                         <img src="images/icon-person.svg" alt="person">
                     </div>
                 </div>
@@ -60,12 +60,11 @@
                             <p class="grid__num" id="total">0.00</p>
                         </div>
                         <div class="grid__btn-reset grid__big">
-                            <input type="button" value="RESET">
+                            <input type="button" onclick="my_reset()" value="RESET">
                         </div>
                     </div>
                 </div>
             </main>
-
         </div>
 
 

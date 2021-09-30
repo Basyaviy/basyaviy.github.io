@@ -197,19 +197,17 @@ h1 {
     &__num::before {
         content: '$';
     }
-    &__btn-reset {
-        & input {
-            background-color: $strongCyan;
-            width: 100%;
-            font-size: 16px;
-            font-weight: 700;
-            padding: 10px;
-            border-radius: 5px;
-            border: none;
-            color: $veryDarkCyan;
-            @media(max-width: 700px) {
-                font-size: 21px;
-            }
+    &__btn-reset input {
+        background-color: $strongCyan;
+        width: 100%;
+        font-size: 16px;
+        font-weight: 700;
+        padding: 10px;
+        border-radius: 5px;
+        border: none;
+        color: $veryDarkCyan;
+        @media(max-width: 700px) {
+            font-size: 21px;
         }
     }
 }
