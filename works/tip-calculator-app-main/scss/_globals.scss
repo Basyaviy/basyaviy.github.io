@@ -1,0 +1,31 @@
+// ### Primary
+$strongCyan: hsl(172, 67%, 45%);
+// ### Neutral
+$veryDarkCyan: hsl(183, 100%, 15%);
+$darkGrayishCyan: hsl(186, 14%, 43%);
+// $darkGrayishCyan: hsl(184, 14%, 56%);
+$lightGrayishCyan: hsl(185, 41%, 84%);
+// $lightGrayishCyan: hsl(189, 41%, 97%);
+$textColor:#667270;
+$backgroundField:#f3f8fb;
+// $field:#f3f8fb;
+$white: hsl(0, 0%, 100%);
+* {
+    box-sizing: border-box;
+    margin: 0;
+    //  line-height: 1;
+}
+
+body {
+    font-size: 24px;
+    font-family: 'Space Mono', monospace;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}

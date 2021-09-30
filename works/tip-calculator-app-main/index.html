@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+    <title>Frontend Mentor | Tip calculator app</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <main class="wrapper">
+        <div class="container">
+            <h1> Tip calculator app</h1>
+            <img class="logo" src="images/logo.svg" alt="logo">
+            <main class="calc">
+                <div class="calc__buttons">
+                    <p class="calc__buttons-bill">Bill</p>
+                    <div class="calc__buttons-input-bill field">
+                        <input type="number" name="bill" id="">
+                        <img src="images/icon-dollar.svg" alt="dollar">
+                    </div>
+                    <p class="calc__buttons-select">Select Tip %</p>
+                    <div class="calc__grid">
+                        <label class="calc__grid-item"><input class="calc__grid-item-input" type="radio" name="percent" value="5"><p>5%</p></label>
+                        <label class="calc__grid-item"><input class="calc__grid-item-input" type="radio" name="percent" value="10"><p>10%</p></label>
+                        <label class="calc__grid-item"><input class="calc__grid-item-input" type="radio" name="percent" value="15"><p>15%</p></label>
+                        <label class="calc__grid-item"><input class="calc__grid-item-input" type="radio" name="percent" value="25"><p>25%</p></label>
+                        <label class="calc__grid-item"><input class="calc__grid-item-input" type="radio" name="percent" value="50"><p>50%</p></label>
+                        <div class="field">
+                            <input placeholder="Custom" type="number" name="percent-custom">
+                        </div>
+                    </div>
+
+                    <p class="calc__buttons-num-of-people">Number of People</p>
+                    <div class="calc__buttons-input-person field">
+                        <input type="number" name="person" id="">
+                        <img src="images/icon-person.svg" alt="person">
+                    </div>
+                </div>
+                <div class="calc__screen">
+                    <div class="grid">
+                        <div class="grid__tip-text">
+                            <p class="grid__text">Tip Amount</p>
+                            <p class="grid__text-small">/ person</p>
+                        </div>
+                        <div class="grid__tip-amount grid__right">
+                            <p class="grid__num" id="amount">0.00</p>
+                        </div>
+                        <div class="grid__total-text grid__vertical">
+                            <p class="grid__text">Total</p>
+                            <p class="grid__text-small">/ person</p>
+                        </div>
+                        <div class="grid__total-amount grid__vertical grid__right">
+                            <p class="grid__num" id="total">0.00</p>
+                        </div>
+                        <div class="grid__btn-reset grid__big">
+                            <input type="button" value="RESET">
+                        </div>
+                    </div>
+                </div>
+            </main>
+
+        </div>
+
+
+        <footer class="attribution">
+            Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="https://basyaviy.github.io/">Basyaviy</a>.
+        </footer>
+    </main>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
