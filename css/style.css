@@ -1,31 +1,17 @@
 body {
-    background-color: lightgray;
-}
-
-.wrapper {
-    max-width: 1000px;
-    padding: 25px;
-    font-size: 30px;
-    margin: 0 auto;
-}
-
-table {
-    margin: 0 auto;
-}
-
-tbody tr:nth-child(odd) {
-    background-color: #ccefb9;
+  background-color: lightgray;
 }
 
 a {
-    display: inline-block;
-    text-decoration: none;
-    padding: 10px;
-    margin: 2px;
-    text-decoration: none;
-    color: #1a6cf0;
+  display: inline-block;
+  font-size: 30px;
+  text-decoration: none;
+  padding: 20px;
+  margin: 2px;
+  border-radius: 20px;
+  background-color: cyan;
 }
 
-a:hover {
-    text-decoration: underline;
+ahover {
+  text-decoration: underline;
 }

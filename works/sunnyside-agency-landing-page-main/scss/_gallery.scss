@@ -1,0 +1,153 @@
+.gallery {
+    //  margin-top: 160px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    @media(max-width: 750px) {
+        grid-template-columns: repeat(auto-fit, minmax(375px, 1fr));
+    }
+    &__item {
+        height: 600px;
+        @media(max-width: 750px) {
+            text-align: center;
+        }
+        & h2 {
+            font-size: 41px;
+            font-family: 'Fraunces', serif;
+            font-weight: 700;
+            @media(max-width: 750px) {
+                font-size: 33px;
+            }
+        }
+        & p {
+            margin-top: 31px;
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 1.65;
+            @media(max-width: 750px) {
+                font-size: 18px;
+                margin-top: 20px;
+            }
+        }
+        & a {
+            margin-left: 7px;
+            margin-top: 46px;
+            letter-spacing: 1px;
+            display: inline-block;
+            font-family: 'Fraunces', serif;
+            font-size: 15px;
+            font-weight: 900;
+            text-transform: uppercase;
+            text-decoration: none;
+            color: $darkBlue;
+            position: relative;
+            z-index: 1;
+            @media(max-width: 750px) {
+                font-size: 15px;
+                margin-top: 41px;
+            }
+        }
+        & a::after {
+            content: '';
+            position: absolute;
+            width: 110%;
+            height: 5px;
+            bottom: 0;
+            left: 50%;
+            transform: translate(-50%);
+            opacity: 0.3;
+            border-radius: 3px;
+            z-index: -1;
+        }
+        .color-yellow::after {
+            background-color: $yellow;
+        }
+        .color-red::after {
+            background-color: $softRed;
+        }
+        &.item1 {
+            background-color: $white;
+            // height: 600px;
+            padding: 158px 107px 50px 165px;
+            @media(max-width: 750px) {
+                padding: 64px 25px;
+                height: 440px;
+                order: 2;
+            }
+        }
+        &.item2 {
+            height: 600px;
+            background-position: center center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-image: url('../images/desktop/image-transform.jpg');
+            @media(max-width: 750px) {
+                background-image: url('../images/mobile/image-transform.jpg');
+                height: 310px;
+                order: 1;
+            }
+        }
+        &.item3 {
+            height: 600px;
+            background-position: center center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-image: url('../images/desktop/image-stand-out.jpg');
+            @media(max-width: 750px) {
+                background-image: url('../images/mobile/image-stand-out.jpg');
+                height: 310px;
+                order: 3;
+            }
+        }
+        &.item4 {
+            background-color: $white;
+            padding: 158px 107px 50px 165px;
+            @media(max-width: 750px) {
+                padding: 65px 30px;
+                height: 430px;
+                order: 4;
+            }
+        }
+        &.common56 {
+            display: flex;
+            flex-direction: column;
+            justify-content: end;
+            align-items: center;
+            text-align: center;
+            // padding: 65px 194px;
+            padding: 65px 26.94%;
+            @media(max-width: 750px) {
+                padding: 53px 14px;
+            }
+            & h2 {
+                font-size: 29px;
+            }
+            & p {
+                margin-top: 27px;
+                font-size: 16px;
+                @media(max-width: 750px) {
+                    & p {
+                        padding: 45px 20px;
+                    }
+                }
+            }
+            height: 600px;
+            background-position: center center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        &.item5 {
+            background-image: url('../images/desktop/image-graphic-design.jpg');
+            @media(max-width: 750px) {
+                background-image: url('../images/mobile/image-graphic-design.jpg');
+                order: 5;
+            }
+        }
+        &.item6 {
+            background-image: url('../images/desktop/image-photography.jpg');
+            @media(max-width: 750px) {
+                order: 6;
+                background-image: url('../images/mobile/image-photography.jpg');
+            }
+        }
+    }
+}

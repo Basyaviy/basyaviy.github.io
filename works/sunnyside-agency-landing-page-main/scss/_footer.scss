@@ -1,0 +1,53 @@
+.footer {
+    background-color: $darkModerateCyan;
+    background-color: #90d4c5;
+    height: 300px;
+    text-align: center;
+    color: $darkDesaturatedCyan;
+    padding-top: 67px;
+    padding-bottom: 70px;
+    @media(max-width: 750px) {
+        padding-top: 63px;
+    }
+    & .logo {
+        width: 171px;
+        height: 33px;
+        color: $darkDesaturatedCyan;
+    }
+    & .nav {
+        margin-top: 40px;
+        &__link {
+            text-decoration: none;
+            color: $darkDesaturatedCyan;
+            font-size: 19px;
+            font-weight: 600;
+            transition: color 200ms linear;
+        }
+        &__link:hover {
+            color: $white;
+        }
+        &__link:not(:last-child) {
+            margin-right: 55px;
+        }
+    }
+    & .social {
+        margin-top: 85px;
+        & a {
+            text-decoration: none;
+            & svg {
+                width: 20px;
+                height: 20px;
+                fill: $darkDesaturatedCyan;
+                transition: fill 200ms linear;
+            }
+        }
+        & a:hover {
+            & svg {
+                fill: $white;
+            }
+        }
+        & a:not(:last-child) {
+            margin-right: 28px;
+        }
+    }
+}
