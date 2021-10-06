@@ -338,6 +338,7 @@ body {
 
 .gallery__item .color-red::after {
   background-color: #fe7867;
+  opacity: 1;
 }
 
 .gallery__item .color-red:hover:after {
