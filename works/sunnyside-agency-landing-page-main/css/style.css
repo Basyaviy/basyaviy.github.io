@@ -327,10 +327,21 @@ body {
 
 .gallery__item .color-yellow::after {
   background-color: #fad400;
+  opacity: 1;
+  -webkit-transition: opacity 200ms linear;
+  transition: opacity 200ms linear;
+}
+
+.gallery__item .color-yellow:hover:after {
+  opacity: 0.5;
 }
 
 .gallery__item .color-red::after {
   background-color: #fe7867;
+}
+
+.gallery__item .color-red:hover:after {
+  opacity: 0.5;
 }
 
 .gallery__item.item1 {

@@ -60,10 +60,23 @@
         }
         .color-yellow::after {
             background-color: $yellow;
+            opacity:1;
+            transition: opacity 200ms linear;
+        }
+        .color-yellow:hover{
+            &:after{
+                opacity:0.5;
+            }
         }
         .color-red::after {
             background-color: $softRed;
         }
+        .color-red:hover{
+            &:after{
+                opacity:0.5;
+            }
+        }
+
         &.item1 {
             background-color: $white;
             // height: 600px;
