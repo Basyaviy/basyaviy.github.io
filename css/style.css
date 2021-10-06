@@ -6,12 +6,18 @@ a {
   display: inline-block;
   font-size: 30px;
   text-decoration: none;
-  padding: 20px;
   margin: 2px;
   border-radius: 20px;
-  background-color: cyan;
 }
 
-ahover {
+a:hover {
   text-decoration: underline;
+}
+
+tr:nth-child(odd) {
+  background-color: #bc81e4;
+}
+
+tr:nth-child(even) {
+  background-color: #79d885;
 }
