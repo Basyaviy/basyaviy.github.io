@@ -71,6 +71,7 @@
         .color-red::after {
             background-color: $softRed;
             opacity:1;
+            transition: opacity 200ms linear;
         }
         .color-red:hover{
             &:after{

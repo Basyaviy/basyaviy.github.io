@@ -339,6 +339,8 @@ body {
 .gallery__item .color-red::after {
   background-color: #fe7867;
   opacity: 1;
+  -webkit-transition: opacity 200ms linear;
+  transition: opacity 200ms linear;
 }
 
 .gallery__item .color-red:hover:after {
