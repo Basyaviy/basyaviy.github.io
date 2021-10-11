@@ -32,25 +32,20 @@
             width: 100%;
             height: 210px;
             text-align: center;
-            background-color: $veryPaleBlue;
-            &.dark{
-                background-color: $darkDesaturatedBlue; 
-            }
+            background-color: var(--top-bg-pattern);
             & .social__name{
                 margin-top: 25px;
+                font-weight: 700;
                 & span{
                     margin-left: 9px;
-                    color:$desaturatedBlue;
+                    color:$darkGrayishBlue;
                 }
             }
             & .social__num{
                 margin-top: 20px;
                 font-size: 52px;
                 font-weight: 700;
-                color:$veryDarkBlue;
-                &.dark{
-                    color:$white;
-                }
+                color:var(--text2);
             }
             & .social__followers{
                 text-transform: uppercase;
@@ -61,6 +56,7 @@
             & .social__today{
                 margin-top: 30px;
                 font-size: 10px;
+                font-weight: 700;
                 & img{
                     vertical-align: middle;
                 }

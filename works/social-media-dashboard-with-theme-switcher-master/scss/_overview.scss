@@ -2,10 +2,7 @@
     h2{
         margin-top: 50px;
         font-size: 24px;
-        color:$veryDarkBlue;
-        &.dark{
-            color:$white;
-        }
+        color:var(--text);
         @media(max-width:500px){
             margin-top: 46px;
             
@@ -25,10 +22,7 @@
             height: 125px;
             border-radius:5px;
             padding: 25px;
-            background: $veryPaleBlue;
-            &.dark{
-                background: $darkDesaturatedBlue;
-            }
+            background:var(--card-bg);
             & .grid-content{
                 display: grid;
                 grid-template-columns: 1fr 1fr;
@@ -43,14 +37,12 @@
                 & .views{
                     font-size: 14px;
                     font-weight: 700;
-                    color: $desaturatedBlue;
+                    color: $darkGrayishBlue;
                 }
                 & .num{
                     font-size: 30px;
-                    color: $veryDarkBlue;
-                    &.dark{
-                        color: $white;
-                    }
+                    font-weight: 700;
+                    color: var(--text2);
                 }
             }
         }

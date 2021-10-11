@@ -1,8 +1,12 @@
-const lightArr = document.querySelectorAll("#color");
+const toggle = document.querySelector("#switcher");
+const doc = document.documentElement;
+doc.setAttribute("data-theme", "dark");
 
-function toggleMode(){
-    for(var i=0;i<lightArr.length;i++){
-        var el=lightArr[i];    
-        el.classList.toggle("dark");
-    }
-}
+toggle.addEventListener("click", () => {
+  toggle.classList.toggle("dark");
+  if (doc.getAttribute("data-theme") === "dark") {
+    doc.setAttribute("data-theme", "light");
+  } else {
+    doc.setAttribute("data-theme", "dark");
+  }
+});
