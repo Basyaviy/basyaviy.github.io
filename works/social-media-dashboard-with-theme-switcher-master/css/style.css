@@ -1,0 +1,360 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-size: 14px;
+  font-family: 'Inter', sans-serif;
+}
+
+main {
+  max-width: 1440px;
+  min-width: 375px;
+}
+
+main.dark {
+  background-color: #1e202a;
+}
+
+main.light {
+  background-color: white;
+}
+
+.wrapper {
+  max-width: 1160px;
+  padding-left: 25px;
+  padding-right: 25px;
+  height: 100%;
+  margin: 0 auto;
+  padding-top: 25px;
+  padding-bottom: 72px;
+}
+
+.arrow-green {
+  color: #1db489;
+}
+
+.arrow-green:before {
+  background-image: url("../images/icon-up.svg");
+}
+
+.arrow-red {
+  color: #dc414c;
+}
+
+.arrow-red:before {
+  background-image: url("../images/icon-down.svg");
+}
+
+.arrow-green:before, .arrow-red:before {
+  content: "";
+  background-repeat: no-repeat;
+  background-position: 0 center;
+  background-size: contain;
+  padding-left: 7px;
+  margin-right: 4px;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 134px;
+  height: 24px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: -2px;
+  right: 0;
+  width: 48px;
+  height: 24px;
+  background: -webkit-gradient(linear, left top, right top, from(#378fe6), to(#3eda82));
+  background: linear-gradient(to right, #378fe6, #3eda82);
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 18px;
+  width: 18px;
+  left: 4px;
+  bottom: 3px;
+  background-color: #1e202a;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background: #aeb3cb;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(22px);
+  transform: translateX(22px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 24px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header .title h1 {
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.header .title h1.dark {
+  color: white;
+}
+
+.header .title h1.light {
+  color: #1e202a;
+}
+
+@media (max-width: 500px) {
+  .header .title h1 {
+    font-size: 24px;
+  }
+}
+
+.header .title p {
+  margin-top: 2px;
+  font-size: 15px;
+  color: #8b97c6;
+}
+
+.header .position {
+  margin-top: 14px;
+  font-size: 14px;
+  font-weight: 700;
+  color: #8b97c6;
+}
+
+@media (max-width: 500px) {
+  .header .position {
+    margin-top: 40px;
+    width: 100%;
+  }
+}
+
+.social {
+  margin-top: 45px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(200px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 30px;
+}
+
+@media (max-width: 500px) {
+  .social {
+    margin-top: 38px;
+    grid-gap: 26px;
+  }
+}
+
+.social__item {
+  height: 215px;
+  position: relative;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.social__item.facebook {
+  background: #198ff5;
+}
+
+.social__item.twitter {
+  background: #1ca0f2;
+}
+
+.social__item.instagram {
+  background: -webkit-gradient(linear, left top, right top, from(#fdc468), to(#df4996));
+  background: linear-gradient(to right, #fdc468, #df4996);
+}
+
+.social__item.youtube {
+  background: #c4032a;
+}
+
+.social__item .content {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 210px;
+  text-align: center;
+}
+
+.social__item .content.dark {
+  background-color: #252a41;
+}
+
+.social__item .content.light {
+  background-color: #f5f7ff;
+}
+
+.social__item .content .social__name {
+  margin-top: 25px;
+}
+
+.social__item .content .social__name span {
+  margin-left: 9px;
+  color: #8b97c6;
+}
+
+.social__item .content .social__num {
+  margin-top: 20px;
+  font-size: 52px;
+  font-weight: 700;
+}
+
+.social__item .content .social__num.dark {
+  color: white;
+}
+
+.social__item .content .social__num.light {
+  color: #1e202a;
+}
+
+.social__item .content .social__followers {
+  text-transform: uppercase;
+  font-size: 10px;
+  letter-spacing: 6px;
+  color: #8b97c6;
+}
+
+.social__item .content .social__today {
+  margin-top: 30px;
+  font-size: 10px;
+}
+
+.social__item .content .social__today img {
+  vertical-align: middle;
+}
+
+.overview h2 {
+  margin-top: 50px;
+  font-size: 24px;
+}
+
+.overview h2.dark {
+  color: white;
+}
+
+.overview h2.light {
+  color: #1e202a;
+}
+
+@media (max-width: 500px) {
+  .overview h2 {
+    margin-top: 46px;
+  }
+}
+
+.overview .grid {
+  margin-top: 23px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(230px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  grid-row-gap: 25px;
+  grid-column-gap: 30px;
+}
+
+@media (max-width: 500px) {
+  .overview .grid {
+    margin-top: 26px;
+    grid-row-gap: 16px;
+  }
+}
+
+.overview .grid__item {
+  height: 125px;
+  border-radius: 5px;
+  padding: 25px;
+}
+
+.overview .grid__item.dark {
+  background: #252a41;
+}
+
+.overview .grid__item.light {
+  background: #f5f7ff;
+}
+
+.overview .grid__item .grid-content {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  grid-row-gap: 25px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.overview .grid__item .grid-content .right {
+  -ms-grid-column-align: right;
+      justify-self: right;
+}
+
+.overview .grid__item .grid-content .bottom {
+  -ms-flex-item-align: end;
+      -ms-grid-row-align: end;
+      align-self: end;
+}
+
+.overview .grid__item .grid-content .views {
+  font-size: 14px;
+  font-weight: 700;
+  color: #8b97c6;
+}
+
+.overview .grid__item .grid-content .num {
+  font-size: 30px;
+  color: white;
+}
+
+.overview .grid__item .grid-content .num.dark {
+  color: white;
+}
+
+.overview .grid__item .grid-content .num.light {
+  color: #1e202a;
+}

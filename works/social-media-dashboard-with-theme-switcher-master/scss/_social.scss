@@ -1,0 +1,75 @@
+.social {
+    margin-top: 45px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+    grid-gap:30px;
+    @media(max-width:500px){
+        margin-top: 38px;
+        grid-gap:26px;
+
+    }
+
+    &__item {
+        height: 215px;
+        position: relative;
+        border-radius: 5px;
+        overflow: hidden;
+        &.facebook{
+            background: $facebook;
+        }
+        &.twitter{
+            background: $twitter;
+        }
+        &.instagram{
+            background: $instagram;
+        }
+        &.youtube{
+            background: $youTube;
+        }
+        & .content{
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: 210px;
+            text-align: center;
+            &.dark{
+                background-color: $darkDesaturatedBlue; 
+            }
+            &.light{
+                background-color: $veryPaleBlue;
+            }
+            & .social__name{
+                margin-top: 25px;
+                & span{
+                    margin-left: 9px;
+                    color:$desaturatedBlue;
+                }
+            }
+            & .social__num{
+                margin-top: 20px;
+                font-size: 52px;
+                font-weight: 700;
+                &.dark{
+                    color:$white;
+                }
+                &.light{
+                    color:$veryDarkBlue;
+                }
+            }
+            & .social__followers{
+                text-transform: uppercase;
+                font-size: 10px;
+                letter-spacing: 6px;
+                color:$desaturatedBlue;
+            }
+            & .social__today{
+                margin-top: 30px;
+                font-size: 10px;
+                & img{
+                    vertical-align: middle;
+                }
+             }
+        }
+    }
+    
+}

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Frontend Mentor | Social Media Dashboard</title>
+</head>
+<body>
+
+  
+<main class="dark" id="color">
+  <div class="wrapper">
+    
+    <header class="header">
+      <div class="title">
+        <h1 class="dark" id="color">Social Media Dashboard</h1>
+        <p>Total Followers: 23,004</p>
+      </div>
+      <label class="switch position">
+        Dark Mode
+        <input type="checkbox" onclick="toggleMode();">
+        <span class="slider round"></span>
+      </label>
+    </header>
+    <section class="social">
+      <div class="social__item facebook">
+        <div class="content dark" id="color">
+          <div class="social__name">
+            <img src="images/icon-facebook.svg" alt="facebook">
+            <span>@nathanf</span>
+          </div>
+          <div class="social__num dark" id="color">1987</div>
+          <p class="social__followers">Followers</p>
+          <p class="social__today arrow-green">
+            12 Today
+          </p>
+        </div>
+      </div>
+      <div class="social__item twitter">
+        <div class="content dark" id="color">
+          <div class="social__name">
+            <img src="images/icon-twitter.svg" alt="twitter">
+            <span>@nathanf</span>
+          </div>
+          <div class="social__num dark" id="color">1044</div>
+          <p class="social__followers">Followers</p>
+          <p class="social__today arrow-green">99 Today</p>
+        </div>
+      </div>
+      <div class="social__item instagram">
+        <div class="content dark" id="color">
+          <div class="social__name">
+            <img src="images/icon-instagram.svg" alt="instagram">
+            <span>@realnathanf</span>
+          </div>
+          <div class="social__num dark" id="color">11k</div>
+          <p class="social__followers">Followers</p>
+          <p class="social__today arrow-green">1099 Today</p>
+        </div>
+      </div>
+      <div class="social__item youtube">
+        <div class="content dark" id="color">
+          <div class="social__name">
+            <img src="images/icon-youtube.svg" alt="youtube">
+            <span>Nathan F.</span>
+          </div>
+          <div class="social__num dark" id="color">8239</div>
+          <p class="social__followers">Subscribers</p>
+          <p class="social__today arrow-red">144 Today</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="overview">
+      <h2 class="dark" id="color">Overview - Today</h2>
+      <div class="grid">
+        <div class="grid__item dark" id="color">
+          <div class="grid-content">
+            <p class="views left">Page Views</p>
+            <img  class="right" src="images/icon-facebook.svg" alt="facebook">
+            <p class="num dark left bottom" id="color">87</p>
+            <p class="percents right bottom arrow-green">3%</p>
+          </div>
+        </div>
+        <div class="grid__item dark" id="color">
+          <div class="grid-content">
+            <p class="views left">Likes</p>
+            <img  class="right" src="images/icon-facebook.svg" alt="facebook">
+            <p class="num dark left bottom" id="color">52</p>
+            <p class="percents right bottom arrow-red">2%</p>
+          </div>
+        </div>
+        <div class="grid__item dark" id="color">
+          <div class="grid-content">
+            <p class="views left">Likes</p>
+            <img  class="right" src="images/icon-instagram.svg" alt="instagram">
+            <p class="num dark left bottom" id="color">5462</p>
+            <p class="percents right bottom arrow-green">2257%</p>
+          </div>
+        </div>
+        <div class="grid__item dark" id="color">
+          <div class="grid-content">
+            <p class="views left">Page Views</p>
+            <img  class="right" src="images/icon-instagram.svg" alt="instagram">
+            <p class="num dark left bottom" id="color">52k</p>
+            <p class="percents right bottom arrow-green">1375%</p>
+          </div>
+        </div>
+        <div class="grid__item dark" id="color">
+          <div class="grid-content">
+            <p class="views left">Retweets</p>
+            <img  class="right" src="images/icon-twitter.svg" alt="twitter">
+            <p class="num dark left bottom" id="color">117</p>
+            <p class="percents right bottom arrow-green">303%</p>
+          </div>
+        </div>
+        <div class="grid__item dark" id="color">
+          <div class="grid-content">
+            <p class="views left">Likes</p>
+            <img  class="right" src="images/icon-twitter.svg" alt="twitter">
+            <p class="num dark left bottom" id="color">507</p>
+            <p class="percents right bottom arrow-green">553%</p>
+          </div>
+        </div>
+        <div class="grid__item dark" id="color">
+          <div class="grid-content">
+            <p class="views left">Likes</p>
+            <img  class="right" src="images/icon-youtube.svg" alt="youtube">
+            <p class="num dark left bottom" id="color">107</p>
+            <p class="percents right bottom arrow-red">19%</p>
+          </div>
+        </div>
+        <div class="grid__item dark" id="color">
+          <div class="grid-content">
+            <p class="views left">Total Views</p>
+            <img  class="right" src="images/icon-youtube.svg" alt="youtube">
+            <p class="num dark left bottom" id="color">1407</p>
+            <p class="percents right bottom arrow-red">12%</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+    
+  
+</main>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
+    Coded by <a href="https://basyaviy.github.io/">Basyaviy</a>.
+  </div>
+
+  <script src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+.overview{
+    h2{
+        margin-top: 50px;
+        font-size: 24px;
+        &.dark{
+            color:$white;
+        }
+        &.light{
+            color:$veryDarkBlue;
+        }
+        @media(max-width:500px){
+            margin-top: 46px;
+            
+        }
+    }
+    & .grid{
+        margin-top: 23px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+        grid-row-gap:25px;
+        grid-column-gap:30px;
+        @media(max-width:500px){
+            margin-top: 26px;
+            grid-row-gap:16px;
+        }
+        &__item{
+            height: 125px;
+            border-radius:5px;
+            padding: 25px;
+            &.dark{
+                background: $darkDesaturatedBlue;
+            }
+            &.light{
+                background: $veryPaleBlue;
+            }
+            & .grid-content{
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-row-gap: 25px;
+                align-items: center;
+                & .right{
+                    justify-self: right;
+                }
+                & .bottom{
+                    align-self: end;
+                }
+                & .views{
+                    font-size: 14px;
+                    font-weight: 700;
+                    color: $desaturatedBlue;
+                }
+                & .num{
+                    font-size: 30px;
+                    color: $white;
+                    &.dark{
+                        color: $white;
+                    }
+                    &.light{
+                        color: $veryDarkBlue;
+                    }
+                }
+            }
+        }
+    }
+}
