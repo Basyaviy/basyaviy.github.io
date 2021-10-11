@@ -8,11 +8,9 @@
         h1{
             font-size: 28px;
             font-weight: 700;
+            color:$veryDarkBlue;
             &.dark{
                 color: $white;
-            }
-            &.light{
-                color:$veryDarkBlue;
             }
             @media(max-width:500px){
                 font-size: 24px;
@@ -29,7 +27,7 @@
         font-size: 14px;
         font-weight: 700;
         color:$desaturatedBlue;
-        @media(max-width:500px){
+        @media(max-width:550px){
             margin-top: 40px;
             width:100%;
 

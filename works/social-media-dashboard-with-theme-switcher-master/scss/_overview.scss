@@ -2,11 +2,9 @@
     h2{
         margin-top: 50px;
         font-size: 24px;
+        color:$veryDarkBlue;
         &.dark{
             color:$white;
-        }
-        &.light{
-            color:$veryDarkBlue;
         }
         @media(max-width:500px){
             margin-top: 46px;
@@ -27,11 +25,9 @@
             height: 125px;
             border-radius:5px;
             padding: 25px;
+            background: $veryPaleBlue;
             &.dark{
                 background: $darkDesaturatedBlue;
-            }
-            &.light{
-                background: $veryPaleBlue;
             }
             & .grid-content{
                 display: grid;
@@ -51,12 +47,9 @@
                 }
                 & .num{
                     font-size: 30px;
-                    color: $white;
+                    color: $veryDarkBlue;
                     &.dark{
                         color: $white;
-                    }
-                    &.light{
-                        color: $veryDarkBlue;
                     }
                 }
             }

@@ -32,11 +32,9 @@
             width: 100%;
             height: 210px;
             text-align: center;
+            background-color: $veryPaleBlue;
             &.dark{
                 background-color: $darkDesaturatedBlue; 
-            }
-            &.light{
-                background-color: $veryPaleBlue;
             }
             & .social__name{
                 margin-top: 25px;
@@ -49,11 +47,9 @@
                 margin-top: 20px;
                 font-size: 52px;
                 font-weight: 700;
+                color:$veryDarkBlue;
                 &.dark{
                     color:$white;
-                }
-                &.light{
-                    color:$veryDarkBlue;
                 }
             }
             & .social__followers{
