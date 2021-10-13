@@ -44,24 +44,41 @@ body{
     margin:0 auto;
     background:url("../images/pattern-circles.svg"), url("../images/bg-pattern.svg");
     background-repeat: no-repeat;
-    background-position: center 10%, 0 0;
+    background-position: center 12%, 0 0;
     text-align: center;
     padding-top: 117px;
     padding-bottom:130px;
+    @media(max-width:650px){
+        background-position: center 17%, 0 0;
+    }
+
+
 }
 
 .title{
-    font-size: 18px;
+    font-size: 28px;
     font-weight: 800;
     position: relative;
     color:$darkDesaturatedBlue;
+    @media(max-width:650px){
+        font-size: 19px;
+        margin-top: 71px;
+    }
 }
 .subtitle{
-    margin-top: 24px;
-    font-size: 12px;
+    margin-top: 12px;
+    font-size: 15px;
     font-weight: 600;
     color:$grayishBlue;
     margin-bottom: 94px;
+    
+    @media(max-width:650px){
+        margin-top: 5px;
+        margin-bottom: 60px;
+        font-size: 12px;
+        padding: 0px 100px;
+        line-height: 1.8;
+    }
 }
 
 .attribution { font-size: 11px; text-align: center; }
