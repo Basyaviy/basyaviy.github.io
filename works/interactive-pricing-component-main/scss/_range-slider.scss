@@ -1,0 +1,41 @@
+.range-slider{
+    margin-top: 35px;
+    display:flex;
+    align-items: center;
+    &-input{
+        width: 100%;
+        appearance:none;
+        
+        height:7px;
+        background: linear-gradient(to right, $softCyan 0%, $softCyan 50%, $lightGrayishBlue 50%, $lightGrayishBlue 100%);
+        border-radius:4px;
+        /* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+        &::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 35px;
+            height: 35px;
+            border-radius:50%;
+            background: $strongCyan url("../images/icon-slider.svg");
+            background-repeat: no-repeat;
+            background-position: center;
+            cursor: pointer;
+            box-shadow: 0 5px 20px $strongCyan;
+        }
+        
+        &::-moz-range-thumb {
+            width: 35px;
+            height: 35px;
+            border-radius:50%;
+            background: $strongCyan url("../images/icon-slider.svg");
+            background-repeat: no-repeat;
+            background-position: center;
+            cursor: pointer;
+        }
+    }
+    &-arrows{
+        width: 22px;
+        height: 13px;
+        fill:#80FFF3;
+    }
+}

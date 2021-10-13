@@ -1,0 +1,68 @@
+// ### Primary
+// (Full Slider Bar)
+$softCyan : hsl(174, 77%, 80%);
+// (Slider Backround)
+$strongCyan : hsl(174, 86%, 45%);
+// (Discount Background)
+$lightGrayishRed : hsl(14, 92%, 95%);
+// (Discount Text)
+$lightRed : hsl(15, 100%, 70%);
+// (CTA Text)
+$paleBlue : hsl(226, 100%, 87%);
+
+// ### Neutral
+// (Pricing Component Background)
+$white : hsl(0, 0%, 100%);
+// (Main Background)
+$veryPaleBlue : hsl(230, 100%, 99%);
+// (Empty Slider Bar)asd
+$lightGrayishBlue : hsl(224, 65%, 95%);
+// (Toggle Background)
+$lightGrayishBlueToggle : hsl(223, 50%, 87%);
+// (Text)
+$grayishBlue : hsl(225, 20%, 60%);
+// (Text & CTA Background)
+$darkDesaturatedBlue : hsl(227, 35%, 25%);
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+
+body{
+    font-size: 15px;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 600;//800
+    margin:0 auto;
+}
+
+
+.main{
+    max-width: 1440px;
+    margin:0 auto;
+    background:url("../images/pattern-circles.svg"), url("../images/bg-pattern.svg");
+    background-repeat: no-repeat;
+    background-position: center 10%, 0 0;
+    text-align: center;
+    padding-top: 117px;
+    padding-bottom:130px;
+}
+
+.title{
+    font-size: 18px;
+    font-weight: 800;
+    position: relative;
+    color:$darkDesaturatedBlue;
+}
+.subtitle{
+    margin-top: 24px;
+    font-size: 12px;
+    font-weight: 600;
+    color:$grayishBlue;
+    margin-bottom: 94px;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }

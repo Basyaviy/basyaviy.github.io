@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    
+    <title>Frontend Mentor | Interactive pricing component</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap" rel="stylesheet"> 
+    
+  </head>
+  <body>
+  <main class="main">
+    <h1 class="title">Simple, traffic-based pricing</h1>
+    <h2 class="subtitle">Sign-up for our 30-day trial. No credit card required.</h2>
+    <section class="content">
+      <div class="first-line">
+        <div class="pageviews">Pageviews</div>
+        <div class="price">$<span class="price-rangeDisplay" id="rangeDisplay">16.00</span><span class="price-month">/month</span></div>
+      </div>
+      <div class="range-slider">
+        <input type="range" min="1" max="30" value="16.00" step="0.01" class="range-slider-input" id="myRange">
+      </div>
+      <div class="second-line">
+        <span class="billing">Monthly Billing</span>
+        <span class="switcher switcher-position" id="switch"></span>
+        <span class="billing">Yearly Billing</span>
+        <span class="discount">25% discount</span>
+      </div>
+      <div class="last-line">
+        <div class="included">
+          <p>Unlimited websites</p>
+          <p>100% data ownership</p>
+          <p>Email reports</p>
+        </div>
+        <input type="button" value="Start my trial">
+      </div>
+    </section>
+  </main>
+
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://basyaviy.github.io/">Basyaviy</a>.
+  </footer>
+  <script src="js/script.js"></script>
+</body>
+</html>

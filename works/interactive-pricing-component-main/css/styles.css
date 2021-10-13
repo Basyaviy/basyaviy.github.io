@@ -1,0 +1,284 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-size: 15px;
+  font-family: 'Manrope', sans-serif;
+  font-weight: 600;
+  margin: 0 auto;
+}
+
+.main {
+  max-width: 1440px;
+  margin: 0 auto;
+  background: url("../images/pattern-circles.svg"), url("../images/bg-pattern.svg");
+  background-repeat: no-repeat;
+  background-position: center 10%, 0 0;
+  text-align: center;
+  padding-top: 117px;
+  padding-bottom: 130px;
+}
+
+.title {
+  font-size: 18px;
+  font-weight: 800;
+  position: relative;
+  color: #293356;
+}
+
+.subtitle {
+  margin-top: 24px;
+  font-size: 12px;
+  font-weight: 600;
+  color: #858fad;
+  margin-bottom: 94px;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+
+.range-slider {
+  margin-top: 35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.range-slider-input {
+  width: 100%;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  height: 7px;
+  background: -webkit-gradient(linear, left top, right top, from(#a5f3eb), color-stop(50%, #a5f3eb), color-stop(50%, #eaeefb), to(#eaeefb));
+  background: linear-gradient(to right, #a5f3eb 0%, #a5f3eb 50%, #eaeefb 50%, #eaeefb 100%);
+  border-radius: 4px;
+  /* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+}
+
+.range-slider-input::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background: #10d5c2 url("../images/icon-slider.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+  -webkit-box-shadow: 0 5px 20px #10d5c2;
+          box-shadow: 0 5px 20px #10d5c2;
+}
+
+.range-slider-input::-moz-range-thumb {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background: #10d5c2 url("../images/icon-slider.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+}
+
+.range-slider-arrows {
+  width: 22px;
+  height: 13px;
+  fill: #80FFF3;
+}
+
+.switcher {
+  position: relative;
+  width: 40px;
+  height: 20px;
+  background: #cdd7ee;
+  border-radius: 10px;
+}
+
+.switcher:before {
+  content: "";
+  position: absolute;
+  height: 14px;
+  width: 14px;
+  left: 4px;
+  bottom: 3px;
+  background-color: white;
+  border-radius: 9px;
+  -webkit-transition: -webkit-transform 200ms linear;
+  transition: -webkit-transform 200ms linear;
+  transition: transform 200ms linear;
+  transition: transform 200ms linear, -webkit-transform 200ms linear;
+}
+
+.switcher:hover {
+  background: #a5f3eb;
+}
+
+.action:before {
+  -webkit-transform: translateX(19px);
+          transform: translateX(19px);
+}
+
+.content {
+  width: 540px;
+  background-color: white;
+  margin: 0 auto;
+  border-radius: 5px;
+  -webkit-box-shadow: 4px 4px 20px #eaeefb;
+          box-shadow: 4px 4px 20px #eaeefb;
+  padding: 54px 44px 35px 47px;
+}
+
+.content .first-line {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 650px) {
+  .content .first-line {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.content .first-line .pageviews {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: #858fad;
+}
+
+.content .first-line .price {
+  font-size: 30px;
+  color: #293356;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: left;
+}
+
+.content .first-line .price-rangeDisplay {
+  width: 80px;
+}
+
+.content .first-line .price-month {
+  margin-left: 10px;
+  font-size: 11px;
+  color: #858fad;
+}
+
+.content .second-line {
+  margin-top: 38px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 40px;
+  border-bottom: 1px solid #858fad;
+}
+
+.content .second-line .billing {
+  color: #858fad;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.content .second-line .switcher-position {
+  margin: 15px 5px;
+}
+
+.content .second-line .discount {
+  margin-left: 7px;
+  font-size: 8px;
+  color: #ff8c66;
+  padding: 3px 5px;
+  border-radius: 8px;
+  background-color: #feece7;
+}
+
+.content .last-line {
+  margin-top: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: left;
+}
+
+.content .last-line p {
+  margin-bottom: 18px;
+  position: relative;
+  padding-left: 10px;
+  font-size: 8px;
+  color: #858fad;
+}
+
+.content .last-line p:last-child {
+  margin-bottom: 0;
+}
+
+.content .last-line p:before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  background: url("../images/icon-check.svg");
+  background-repeat: no-repeat;
+  width: 10px;
+  height: 10px;
+}
+
+.content .last-line input {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: 40px;
+  width: 150px;
+  color: #858fad;
+  background-color: #293356;
+  font-size: 8px;
+  font-weight: 600;
+  border-radius: 21px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.content .last-line input:hover {
+  color: white;
+}
