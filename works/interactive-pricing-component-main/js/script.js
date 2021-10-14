@@ -39,11 +39,6 @@ switcher.onclick = function(){
 }
 
 function setValue(){
-    console.log("current_position:"+current_position);
-    // var valPageviews;
-      console.log(valPageviews);
-      console.log(valPrice);
-
     if(monthly_bool){
         rangeDisplay.innerText = valPrice[current_position];
     }else{
