@@ -1,19 +1,24 @@
 var slider = document.getElementById("myRange");
-var output = document.getElementById("rangeDisplay");
+var rangeDisplay = document.getElementById("rangeDisplay");
 var switcher = document.getElementById("switch");
+var pageviews = document.getElementById("pageviews");
 
 //initial variables 
+var valPageviews=["10K","50K","100K","500K","1M"];
+var valPrice=["8.00","12.00","16.00","24.00","36.00"];
 var monthly_bool = true;
-var current_position = slider.value;
+var current_position = 2;
+pageviews.innerText=valPageviews[current_position];
+rangeDisplay.innerText=valPrice[current_position];
 
 // .chrome styling Vanilla JS
 // Update the current range-slider value (each time you drag the slider handle)
 slider.oninput = function() {
     //take current position
     current_position = this.value;
-    //set value 
     setValue();
     //styling background line of range-slider
+    //position in percents
     var position = (this.value-this.min)/(this.max-this.min)*100;
     this.style.background = 'linear-gradient(to right, hsl(174, 77%, 80%) 0%, hsl(174, 77%, 80%) ' + position + '%, hsl(224, 65%, 95%) ' + position + '%, hsl(224, 65%, 95%) 100%)'
 }
@@ -22,26 +27,28 @@ slider.oninput = function() {
 switcher.onclick = function(){
     //yearly
     if(monthly_bool){
-        //indent for value
-        output.style.width = "100px";
         //style the round slide of switcher
         this.classList.add('action');
         monthly_bool=false;
     }else{
         //monthly
-        output.style.width = "80px";
         this.classList.remove('action');
         monthly_bool=true;
     }
     setValue();
 }
 
-//calculate current value depends of switch and range slider positions 
 function setValue(){
+    console.log("current_position:"+current_position);
+    // var valPageviews;
+      console.log(valPageviews);
+      console.log(valPrice);
+
     if(monthly_bool){
-        output.innerText = parseFloat(current_position).toFixed(2);
+        rangeDisplay.innerText = valPrice[current_position];
     }else{
         //yearly
-        output.innerText = (current_position*12).toFixed(2);
+        rangeDisplay.innerText = (valPrice[current_position]*3/4).toFixed(2);
     }
+    pageviews.innerText=valPageviews[current_position];
 }

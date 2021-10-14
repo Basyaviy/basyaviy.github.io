@@ -25,12 +25,24 @@
             background-position: center;
             cursor: pointer;
             box-shadow: 0 5px 20px $strongCyan;
+            &:hover{
+                background: $softCyan url("../images/icon-slider.svg");
+                background-repeat: no-repeat;
+                background-position: center;
+            }            
+            &:active{
+                background: $strongCyan url("../images/icon-slider.svg");
+                background-repeat: no-repeat;
+                background-position: center;
+                cursor:grabbing !important;
+                z-index:3;
+            }
+
             @media(max-width:650px){
                 width: 35px;
                 height: 35px;
             }
- 
-        }
+         }
         
         &::-moz-range-thumb {
             width: 40px;
@@ -40,6 +52,17 @@
             background-repeat: no-repeat;
             background-position: center;
             cursor: pointer;
+            &:hover{
+                background: $softCyan url("../images/icon-slider.svg");
+                background-repeat: no-repeat;
+                background-position: center;
+            }
+            &:active{
+                background: $strongCyan url("../images/icon-slider.svg");
+                background-repeat: no-repeat;
+                background-position: center;
+                cursor:grabbing;
+            }
             @media(max-width:650px){
                 width: 35px;
                 height: 35px;
