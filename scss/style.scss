@@ -1,24 +1,79 @@
 body {
-    background-color: lightgray;
+	background-color: hsl(230, 100%, 99%);
 }
+
 
 a {
     display: inline-block;
     font-size: 30px;
     text-decoration: none;
-    // padding: 10px;
     margin: 2px;
     border-radius: 20px;
+    color:black;
     &:hover {
         text-decoration: underline;
     }
 }
 
+.wrapper{
+    margin:0 auto;
+    max-width:1440px;
+    min-width: 375px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.title{
+    margin-top:50px;
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.bg-circles {
+    position: absolute;
+    display: inline-block;
+    top: 10px;
+    width: 146px;
+    height: 145px;
+    z-index: 1;
+    animation: 12s linear infinite running circleRotate;
+}
+
+@keyframes circleRotate {
+    from { transform: rotate(0deg); }
+    to   { transform: rotate(360deg); }
+}
+
+.table{
+    margin-top:70px;
+    margin-left:5px;
+    margin-right:5px;
+    @media (max-width:700px) {
+        .name{
+            a{
+                font-size: 25px;
+            }
+        }
+        .difficult{
+            display: none;
+        }
+        .start-date{
+            display: none;
+        }
+        .release-date{
+            display: none;
+        }
+    }
+}
+
 tr:nth-child(odd){
     background-color: rgb(188, 129, 228);
-
+    
 }
 tr:nth-child(even){
     background-color: rgb(121, 216, 133);
-
+    
 }

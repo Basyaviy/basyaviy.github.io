@@ -1,5 +1,5 @@
 body {
-  background-color: lightgray;
+  background-color: #fafbff;
 }
 
 a {
@@ -8,10 +8,89 @@ a {
   text-decoration: none;
   margin: 2px;
   border-radius: 20px;
+  color: black;
 }
 
 a:hover {
   text-decoration: underline;
+}
+
+.wrapper {
+  margin: 0 auto;
+  max-width: 1440px;
+  min-width: 375px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.title {
+  margin-top: 50px;
+  font-size: 30px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.bg-circles {
+  position: absolute;
+  display: inline-block;
+  top: 10px;
+  width: 146px;
+  height: 145px;
+  z-index: 1;
+  -webkit-animation: 12s linear infinite running circleRotate;
+          animation: 12s linear infinite running circleRotate;
+}
+
+@-webkit-keyframes circleRotate {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes circleRotate {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+.table {
+  margin-top: 70px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+@media (max-width: 700px) {
+  .table .name a {
+    font-size: 25px;
+  }
+  .table .difficult {
+    display: none;
+  }
+  .table .start-date {
+    display: none;
+  }
+  .table .release-date {
+    display: none;
+  }
 }
 
 tr:nth-child(odd) {
