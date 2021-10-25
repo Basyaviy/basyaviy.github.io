@@ -263,6 +263,7 @@ body {
 @media (max-width: 950px) {
   .nav__header:after {
     background: url("../images/icon-arrow-dark.svg");
+    top: 35%;
   }
 }
 
