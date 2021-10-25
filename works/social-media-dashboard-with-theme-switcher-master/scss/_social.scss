@@ -14,16 +14,24 @@
         position: relative;
         border-radius: 5px;
         overflow: hidden;
-        &.facebook{
+        & .facebook{
+            width: 100%;
+            height: 4px;
             background: $facebook;
         }
-        &.twitter{
+        & .twitter{
+            width: 100%;
+            height: 4px;
             background: $twitter;
         }
-        &.instagram{
+        & .instagram{
+            width: 100%;
+            height: 4px;
             background: $instagram;
         }
-        &.youtube{
+        & .youtube{
+            width: 100%;
+            height: 4px;
             background: $youTube;
         }
         & .content{

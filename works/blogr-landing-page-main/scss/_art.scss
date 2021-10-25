@@ -1,0 +1,56 @@
+.art {
+    background-image: url('../images/bg-pattern-circles.svg'), linear-gradient(to right, $veryDarkGrayBlue, $veryDarkDesaturatedBlue);
+    background-repeat: no-repeat;
+    background-position: -49% 82%;
+    border-top-right-radius: 100px;
+    border-bottom-left-radius: 100px;
+    position: relative;
+    color:$white;
+
+    & .text{
+        margin: 0px 0 0px auto;
+        width: 540px;
+        @media(max-width:1350px){
+            width: inherit;
+
+        }
+        & h2{
+            padding-top: 120px;
+            text-align: left;
+            font-family: 'Overpass', sans-serif;
+            font-size: 38px;
+            font-weight: 600;
+            @media(max-width:1350px){
+                text-align:center;
+                padding-top: 226px;
+                font-size: 37px;
+            }
+        }
+        & p{
+            margin-top: 20px;
+            text-align: justify;
+            font-family: 'Overpass', sans-serif;
+            font-size: 17px;
+            font-weight: 300;
+            line-height: 1.6;
+            padding-bottom: 110px;
+            @media(max-width:1350px){
+                text-align: center;
+                line-height: 1.7;
+            }
+        }
+    }
+    img{
+        position: absolute;
+        display: inline-block;
+        top: -70px;
+        left: 123px;
+        width: 553px;
+        @media(max-width:1350px){
+            top: -186px;
+            left: 50%;
+            transform:translateX(-50%);
+            width: 380px;
+        }
+    }
+}

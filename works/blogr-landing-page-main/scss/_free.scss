@@ -1,0 +1,36 @@
+.free {
+    background-image: url('../images/illustration-laptop-desktop.svg');
+    background-color: #fff;
+    background-repeat: no-repeat;
+    background-position: -59% 49%;
+    @media(max-width:1350px){
+        background-image: url('../images/illustration-laptop-mobile.svg');
+        background-position: center 9%;
+
+    }
+    // height:1020px;
+    & .text{
+        margin: 0px 0 0 auto;
+        padding-top:240px;
+        padding-bottom:305px;
+        text-align: left;
+        width: 540px;
+        @media(max-width:1350px){
+            width: inherit;
+            padding-top: 393px;
+            text-align: center;
+            padding-bottom: 84px;
+        }
+        & h2{
+            margin-top: 65px;
+            font-size: 28px;
+            line-height: 1.5;
+        }
+        & p{
+            margin-top: 22px;
+            font-size: 17px;
+            font-weight: 300;
+            line-height: 1.7;
+        }
+    }
+}

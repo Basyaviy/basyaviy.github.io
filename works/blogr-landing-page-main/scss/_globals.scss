@@ -1,0 +1,86 @@
+
+// ### Primary
+// (CTA text)
+$lightRed : hsl(356, 100%, 66%);
+// (CTA hover background)
+$veryLightRed : hsl(355, 100%, 74%);
+// (headings)
+$veryDarkBlue : hsl(208, 49%, 24%);
+
+// ### Neutral
+// (text)
+$white : hsl(0, 0%, 100%);
+// (footer text)
+$grayishBlue : hsl(240, 2%, 79%);
+// (body copy)
+$veryDarkGrayishBlue : hsl(207, 13%, 34%);
+// (footer background)
+$veryDarkBlackBlue : hsl(240, 10%, 16%);
+
+// ### Gradient
+
+// Background gradient - Intro/CTA mobile nav:
+
+$veryLightRed: hsl(13, 100%, 72%);
+$lightRed: hsl(353, 100%, 62%);
+
+// Background gradient - body:
+
+$veryDarkGrayBlue: hsl(237, 17%, 21%);
+$veryDarkDesaturatedBlue: hsl(237, 23%, 32%);
+
+*,
+*:after,
+*:before{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 16px;
+    //Overpass 300,600
+    font-family: 'Overpass', sans-serif;
+    //Ununtu 400,500,600
+    // font-family: 'Ubuntu', sans-serif;
+}
+
+.wrapper{
+    max-width:1440px;
+    margin:0 auto;
+}
+
+.container{
+    max-width: 1160px;
+    padding-left:25px;
+    padding-right:25px;
+    margin:0 auto;
+}
+
+.button{
+    padding:15px 30px;
+    background-color: $white;
+    border-radius:27px;
+    border:none;
+    color:$lightRed;
+    transition: 200ms linear; 
+    cursor: pointer;
+    &:hover{
+        background-color: rgba(255,255,255,0.4);
+        color:$white;
+    }
+}
+
+.button2{
+    background-color: transparent;
+    border:2px solid $white;
+    color:$white;
+    &:hover{
+        background-color: $white;
+        color:$lightRed;
+    }
+}
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }

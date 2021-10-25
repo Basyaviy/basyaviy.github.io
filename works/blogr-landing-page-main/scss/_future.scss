@@ -1,0 +1,50 @@
+.future {
+    background-image: url('../images/illustration-editor-desktop.svg');
+    background-color: #fff;
+    background-repeat: no-repeat;
+    background-position: 154% 57%;
+    padding-bottom:255px;
+    @media(max-width:1350px){
+        background-image: url('../images/illustration-editor-mobile.svg');
+        background-position: center 16%;
+        padding-bottom:270px;
+    }
+    & h2{
+        padding-top: 156px;
+        text-align: center;
+        font-size: 37px;
+        @media(max-width:1350px){
+            padding-top: 108px;
+            font-size: 26px;
+        }
+    }
+    & .text{
+        margin-top: 107px;
+        text-align: left;
+        width: 535px;
+        @media(max-width:1350px){
+            margin-top: 423px;
+            text-align: center;
+            width: 100%;
+        }
+        & h3{
+            margin-top: 77px;
+            font-size: 28px;
+            @media(max-width:1350px){
+                margin-top: 42px;
+                font-size: 29px;
+                line-height: 1.1;
+            }
+        }
+        & p{
+            margin-top: 27px;
+            font-size: 15px;
+            letter-spacing: 0.9px;
+            line-height: 1.8;
+            @media(max-width:1350px){
+                margin-top: 19px;
+                line-height: 1.9;
+            }
+        }
+    }
+}

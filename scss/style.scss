@@ -25,6 +25,7 @@ a {
     align-items: center;
     
 }
+
 .title{
     margin-top:50px;
     font-size: 30px;
@@ -48,6 +49,7 @@ a {
 }
 
 .table{
+    counter-reset: rowNumber;
     margin-top:70px;
     margin-left:5px;
     margin-right:5px;
@@ -68,6 +70,15 @@ a {
         }
     }
 }
+
+table tr::before {
+    display: table-cell;
+    counter-increment: rowNumber;
+    content: counter(rowNumber) ".";
+    padding-right: 0.3em;
+    text-align: right;
+    font-size: 30px;
+  }
 
 tr:nth-child(odd){
     background-color: rgb(188, 129, 228);
